@@ -1,0 +1,136 @@
+html,
+body {
+  min-width: 290px;
+  color: black;
+  background-color: #ffffff;
+  font-family: 'Lobster', Arial;
+  line-height: 1.5;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: black;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#navbar li {
+  color: black;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  font-size: 1.4rem;
+}
+#navbar li:hover, #navbar li:focus{
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#navbar a:focus{
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+  color: white;
+  font-family: Courier New;
+  font-weight: bold;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: white;
+}
+section article {
+  margin: 15px;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+section li {
+  margin: 15px 0px 0px 20px;
+}
+hr{
+	height: 0.2rem;
+	border-radius: 4px;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+article a{
+	color: crimson;
+	font-weight: bold;
+}
+code{
+	background-color: crimson;
+	color: black;
+	font-family: Courier New;
+	font-weight:bold;
+}
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+  html,body{
+  	margin: auto 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
